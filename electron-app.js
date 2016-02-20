@@ -1,6 +1,8 @@
 'use strict';
 
-var electron = require('electron'),
+var path = require('path'),
+    url = require('url'),
+    electron = require('electron'),
     app = electron.app,
     BrowserWindow = electron.BrowserWindow,
     registerProtocol = require('./registerProtocol');
@@ -80,7 +82,17 @@ app.on('ready', function () {
       mainWindow.webContents.openDevTools();
     });
 
-    mainWindow.loadURL('file://' + __dirname + '/simple-html.html?ELECTRON-HTML-TO-LOAD-PAGE');
+    var urlToFile = url.format({
+      protocol: 'file',
+      pathname: path.join(__dirname, 'simple-html.html'),
+      query: {
+        'ELECTRON-HTML-TO-LOAD-PAGE': true
+      }
+    });
+
+    console.log(urlToFile);
+
+    mainWindow.loadURL(urlToFile);
     mainWindow.focus();
   });
 });
