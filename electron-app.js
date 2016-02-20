@@ -10,7 +10,7 @@ var mainWindow = null;
 console.log('starting..');
 
 function log() {
-  console.log([].slice.apply(arguments));
+  console.log.apply(console, [].slice.apply(arguments));
 }
 
 app.on('window-all-closed', function () {
@@ -27,8 +27,8 @@ app.on('ready', function () {
   log('electron process ready..');
 
   var browserWindowOpts =  {
-    width: 600,
-    height: 600,
+    width: 1300,
+    height: 1000,
     webPreferences: {
       nodeIntegration: false,
       javascript: true,
@@ -39,7 +39,7 @@ app.on('ready', function () {
   };
 
   // the issue is caused because a custom protocol
-  registerProtocol(protocol, true, log, function (registrationErr) {
+  registerProtocol(protocol, false, log, function (registrationErr) {
     if (registrationErr) {
       return app.quit();
     }
@@ -80,7 +80,7 @@ app.on('ready', function () {
       mainWindow.webContents.openDevTools();
     });
 
-    mainWindow.loadURL('file://' + __dirname + '/test.html');
+    mainWindow.loadURL('file://' + __dirname + '/simple-html.html?ELECTRON-HTML-TO-LOAD-PAGE');
     mainWindow.focus();
   });
 });
