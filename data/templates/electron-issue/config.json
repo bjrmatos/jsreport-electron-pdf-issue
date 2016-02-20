@@ -1,0 +1,29 @@
+{
+    "engine": "jsrender",
+    "recipe": "electron-pdf",
+    "phantom": {
+        "orientation": "portrait",
+        "format": "A4"
+    },
+    "scripts": [],
+    "data": {
+        "shortid": "NJkR2_goe"
+    },
+    "resources": {
+        "items": []
+    },
+    "shortid": "V1yD2Ogog",
+    "modificationDate": {
+        "$$date": 1455919228044
+    },
+    "_id": "ZdvarFm2XKvypaUu",
+    "version": null,
+    "electron": {
+        "marginsType": 0,
+        "marginsTypeText": "Default",
+        "landscape": false,
+        "orientationText": "portrait",
+        "format": "A4",
+        "printBackground": true
+    }
+}

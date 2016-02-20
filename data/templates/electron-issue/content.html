@@ -1,0 +1,736 @@
+<html>
+    <head>	
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <style>
+    .col_titre_head {
+        font-family: Arial;
+    	float:right;
+    	text-align:center;
+    	color:#FFFFFF;
+    	height:24px;
+    	line-height:22px;
+    	background-color:#ee2e3f;
+    	-webkit-border-top-left-radius: 24px;
+    	-moz-border-radius-topleft: 24px;
+    	border-top-left-radius: 24px;
+    	width:85%;
+    	font-weight: bold;
+    }
+    
+    table {
+        border-collapse: collapse; 
+        border-spacing: 0; 
+        border: 0;
+        height:100%;
+    }
+    
+    td {
+        border: None;
+        padding: 0px;
+        }
+    
+    .col_titre1 {
+        -webkit-border-top-left-radius: 20px;
+    	-webkit-border-bottom-right-radius: 0px;
+    	-moz-border-radius-topleft: 20px;
+    	-moz-border-radius-bottomright: 0px;
+    	border-top-left-radius: 20px;
+    	border-bottom-right-radius: 0px;
+    	background: #005498;
+    	font-family: Arial;
+    }
+    .col_titre2 {
+    	background: #005498;
+    	font-family: Arial;
+    }
+    .col_titre3 {
+        -webkit-border-top-left-radius: 0px;
+    	-webkit-border-bottom-right-radius: 20px;
+    	-moz-border-radius-topleft: 0px;
+    	-moz-border-radius-bottomright: 20px;
+    	border-top-left-radius: 0px;
+    	border-bottom-right-radius: 20px;
+    	background: #005498;
+    	font-family: Arial;
+    	width:110px;
+    }
+    .hd_col {
+        color: #FFF;
+    	text-align:center;
+    	font-weight:bold;
+    	padding:5px;
+    }
+
+    .darkblueleftborder{
+        -webkit-border-top-left-radius: 10px;
+    	-webkit-border-bottom-right-radius: 0px;
+    	-moz-border-radius-topleft: 10px;
+    	-moz-border-radius-bottomright: 0px;
+        border-top-left-radius: 10px;
+    	border-bottom-right-radius: 0px;
+        background: #004990;
+        padding: 5px; 
+        color: #FFFFFF;
+        text-align:right;
+        font-family: Arial;
+    }
+    
+    .darkblueleftborder2{
+        -webkit-border-top-left-radius: 10px;
+    	-webkit-border-bottom-right-radius: 0px;
+    	-moz-border-radius-topleft: 10px;
+    	-moz-border-radius-bottomright: 0px;
+        border-top-left-radius: 10px;
+    	border-bottom-right-radius: 0px;
+        background: #004990;
+        padding: 5px; 
+        color: #FFFFFF;
+        text-align:left;
+        font-family: Arial;
+    }
+            
+    .darkbluerightborder{
+        -webkit-border-top-left-radius: 0px;
+    	-webkit-border-bottom-right-radius: 10px;
+    	-moz-border-radius-topleft: 0px;
+    	-moz-border-radius-bottomright: 10px;
+        border-top-left-radius: 0px;
+    	border-bottom-right-radius: 10px;
+        background: #004990;
+        padding: 5px; 
+        color: #FFFFFF;
+        text-align:right;
+        font-family: Arial;
+    }
+    
+    .darkbluerightborder3{
+        -webkit-border-top-left-radius: 0px;
+    	-webkit-border-bottom-right-radius: 10px;
+    	-moz-border-radius-topleft: 0px;
+    	-moz-border-radius-bottomright: 10px;
+        border-top-left-radius: 0px;
+    	border-bottom-right-radius: 10px;
+        background: #004990;
+        padding: 5px; 
+        color: #FFFFFF;
+        text-align:center;
+        font-family: Arial;
+    }
+    
+    .darkblueallborder{
+        -webkit-border-top-left-radius: 10px;
+    	-webkit-border-bottom-right-radius: 10px;
+    	-moz-border-radius-topleft: 10px;
+    	-moz-border-radius-bottomright: 10px;
+        border-top-left-radius: 10px;
+    	border-bottom-right-radius: 10px;
+        background: #004990;
+        padding: 5px; 
+        color: #FFFFFF;
+        text-align:right;
+        font-family: Arial;
+    }
+    
+    .darkblueallborder2{
+        -webkit-border-top-left-radius: 10px;
+    	-webkit-border-bottom-right-radius: 10px;
+    	-moz-border-radius-topleft: 10px;
+    	-moz-border-radius-bottomright: 10px;
+        border-top-left-radius: 10px;
+    	border-bottom-right-radius: 10px;
+        background: #004990;
+        padding: 5px; 
+        color: #FFFFFF;
+        text-align:left;
+        font-family: Arial;
+    }
+    
+    .darkbluewithoutborder{
+        background: #004990;
+        padding: 5px; 
+        color: #FFFFFF;
+        text-align:right;
+        font-family: Arial;
+    }
+    
+    .darkbluewithoutborder2{
+        background: #004990;
+        padding: 5px; 
+        color: #FFFFFF;
+        text-align:left;
+        font-family: Arial;
+    }
+    
+    .darkbluewithoutborder3{
+        background: #004990;
+        padding: 5px; 
+        color: #FFFFFF;
+        text-align:center;
+        font-family: Arial;
+    }
+    
+    .darkbluewithoutbordercentertext{
+        background: #004990;
+        padding: 5px; 
+        color: #FFFFFF;
+        text-align: center;
+        font-family: Arial;
+    }
+    
+    .lightblueleftborder{
+        -webkit-border-top-left-radius: 10px;
+    	-webkit-border-bottom-right-radius: 0px;
+    	-moz-border-radius-topleft: 10px;
+    	-moz-border-radius-bottomright: 0px;
+        border-top-left-radius: 10px;
+    	border-bottom-right-radius: 0px;
+        background: #A6B1D4;
+        padding: 5px; 
+        color: #FFFFFF;
+        text-align: left;
+        height:100%;
+        font-family: Arial;
+    }
+    
+    .lightbluerightborder{
+        -webkit-border-top-left-radius: 0px;
+    	-webkit-border-bottom-right-radius: 10px;
+    	-moz-border-radius-topleft: 0px;
+    	-moz-border-radius-bottomright: 10px;
+        border-top-left-radius: 0px;
+    	border-bottom-right-radius: 10px;
+        background: #A6B1D4;
+        padding: 5px; 
+        color: #FFFFFF;
+        text-align: left;
+        font-family: Arial;
+    }
+    
+    .lightblueallborder{
+        -webkit-border-top-left-radius: 10px;
+    	-webkit-border-bottom-right-radius: 10px;
+    	-moz-border-radius-topleft: 10px;
+    	-moz-border-radius-bottomright: 10px;
+        border-top-left-radius: 10px;
+    	border-bottom-right-radius: 10px;
+        background: #A6B1D4;
+        padding: 5px; 
+        color: #FFFFFF;
+        text-align: left;
+        font-family: Arial;
+    }
+    
+    .lightbluewithoutborder{
+        background: #A6B1D4;
+        padding: 5px; 
+        color: #FFFFFF;
+        text-align: left;
+        height:100%;
+        font-family: Arial;
+    }
+    
+    .darkgreyleftborder{
+        -webkit-border-top-left-radius: 10px;
+    	-webkit-border-bottom-right-radius: 0px;
+    	-moz-border-radius-topleft: 10px;
+    	-moz-border-radius-bottomright: 0px;
+        border-top-left-radius: 10px;
+    	border-bottom-right-radius: 0px;
+        background: #7A95B4;
+        padding: 5px; 
+        color: #FFFFFF;
+        text-align: left;
+        font-family: Arial;
+    }
+    
+    .darkgreyrightborder{
+        -webkit-border-top-left-radius: 0px;
+    	-webkit-border-bottom-right-radius: 10px;
+    	-moz-border-radius-topleft: 0px;
+    	-moz-border-radius-bottomright: 10px;
+        border-top-left-radius: 0px;
+    	border-bottom-right-radius: 10px;
+        background: #7A95B4;
+        padding: 5px; 
+        color: #FFFFFF;
+        font-family: Arial;
+        text-align: left;
+    }
+    
+    .darkgreywithoutborder{
+        background: #7A95B4;
+        padding: 5px; 
+        color: #FFFFFF;
+        text-align: left;
+        font-family: Arial;
+    }
+    
+    .darkredleftborder{
+        -webkit-border-top-left-radius: 10px;
+    	-webkit-border-bottom-right-radius: 0px;
+    	-moz-border-radius-topleft: 10px;
+    	-moz-border-radius-bottomright: 0px;
+        border-top-left-radius: 10px;
+    	border-bottom-right-radius: 0px;
+        background: #AE3851;
+        padding: 5px; 
+        color: #FFFFFF;
+        text-align: left;
+        font-family: Arial;
+    }
+
+    .greyallborder{
+        background: #B1C5C6;
+        padding: 5px; 
+        color: #FFFFFF;
+        text-align: right;
+        font-family: Arial;
+    }
+    
+    .greyrightborder{
+        -webkit-border-top-left-radius: 0px;
+    	-webkit-border-bottom-right-radius: 10px;
+    	-moz-border-radius-topleft: 0px;
+    	-moz-border-radius-bottomright: 10px;
+        border-top-left-radius: 0px;
+    	border-bottom-right-radius: 10px;
+        background: #B1C5C6;
+        padding: 5px; 
+        color: #FFFFFF;
+        text-align: right;
+        font-family: Arial;
+    }
+    
+    .redwithoutborder{
+        background: #ED1D2E;
+        color: #FFFFFF;
+        font-family: Arial;
+    }
+    
+    .redrightborder{
+        -webkit-border-top-left-radius: 0px;
+    	-webkit-border-bottom-right-radius: 10px;
+    	-moz-border-radius-topleft:0px;
+    	-moz-border-radius-bottomright: 10px;
+        border-top-left-radius: 0px;
+    	border-bottom-right-radius: 10px;
+        background: #ED1D2E;
+        color: #FFFFFF;
+        font-family: Arial;
+    }
+    
+    .linediv{
+        height:100%;
+        width:100%;
+        margin-left:5px;
+    }
+    
+    .linetable{
+        border-collapse: collapse;
+        border-spacing: 0;
+        border: 0;
+        height:100%;
+        width:90%;
+        padding: 0px;
+    }
+    
+    .darkblueunite {
+        border: 2px solid #fff;
+        border-bottom-right-radius: 10px;
+        border-top-left-radius: 10px;
+        border-bottom:0px;
+        border-top:0px;
+        border-right:0px;
+        height:100%;
+        width:100%;
+        color:#FFF;
+        font-family: Arial;
+    }
+    
+    .darkbluetdunite{
+    	-webkit-border-bottom-right-radius: 10px;
+    	-moz-border-radius-bottomright: 10px;
+    	border-bottom-right-radius: 10px;
+        background: #004990;
+    }
+    
+    .darkbluetableunite{
+        text-align:center;
+        color:#fff;
+        height:100%;
+        width:100%
+    }
+    
+    .darkbluetabletdunite{
+        padding-right:5px;
+        padding-left:2px;
+        height:100%;
+    }
+    
+    .blackunite {
+        border: 2px solid #000000;
+        border-bottom-right-radius: 10px;
+        border-top-left-radius: 10px;
+        background-color: yellow;
+        height:100%;
+        width:100%;
+    }
+    
+    .blacktdunite{
+    	-webkit-border-bottom-right-radius: 10px;
+    	-moz-border-radius-bottomright: 10px;
+    	border-bottom-right-radius: 10px;
+    }
+    
+    .blacktableunite{
+        text-align:center;
+        color:#000000;
+        height:100%;
+        width:100%
+    }
+    
+    .blacktabletdunite{
+        padding-right:5px;
+        padding-left:2px;
+        font-family: Arial;
+    }
+    
+    .iconeborder{
+        -webkit-border-top-left-radius: 10px;
+    	-webkit-border-bottom-right-radius: 10px;
+    	-webkit-border-top-top-radius: 10px;
+    	-webkit-border-bottom-bottom-radius: 10px;
+    	-moz-border-radius-topleft: 10px;
+    	-moz-border-radius-bottomright: 10px;
+    	-moz-border-radius-topright: 10px;
+    	-moz-border-radius-bottomleft: 10px;
+        border-top-left-radius: 10px;
+    	border-bottom-right-radius: 10px;
+    	border-top-right-radius: 10px;
+    	border-bottom-left-radius: 10px;
+        background: #004990;
+        padding: 5px; 
+        color: #FFFFFF;
+        width:22px;
+        height:100%;
+    }
+    
+    tbody{
+        height:100%;
+    }
+</style>
+    </head>
+    <body>
+        <div style="Color:#FFFFFF;font-style:1px;">.</div> <!-- to avoid overlapping bug -->
+        <table>
+            <thead>
+                <tr>
+                    <td colspan='17'>
+                        <div style="color:white;">¤HIERARCHIE¤</div>
+                    </td>
+                </tr>
+                <tr><td colspan="17" style="height:10px;"></td></tr>
+                <tr>
+                    <td colspan='6'/>
+                    <td colspan='6'><div class="col_titre_head">SOUS DÉTAIL</div></td>
+                    <td colspan='5'><div class="col_titre_head">BUDGET / OUVRAGES</div></td>
+                </tr>
+                <tr>
+                    <td />
+                    <td />
+                    <td />
+                    <td />
+                    <td width="50" />
+                    <td width="5" />
+                    <td class="col_titre1"><div class=hd_col>EXPRESSION<br />(1)</div></td>
+                    <td class="col_titre2"><div class=hd_col>KPERTE<br />(2))</div></td>
+                    <td class="col_titre2"><div class=hd_col>QUANTITÉ<br />TOTAL<br />(3)=(1)*(2)</div></td>
+                    <td class="col_titre2"><div class=hd_col>PU<br />(A))</div></td>
+                    <td class="col_titre2" width="5" />
+                    <td class="col_titre3"><div class=hd_col>MONTANT<br />UNITAIRE<br />(4)=(3)*(A)</div></td>
+                    <td width="5" />
+                    <td class="col_titre1"><div class=hd_col>EXPRESSION<br />(1)</div></td>
+                    <td class="col_titre2"><div class=hd_col>QUANTITÉ<br />TOTAL<br />(6)=VALEUR(5)</div></td>
+                    <td class="col_titre2" width="5" />
+                    <td class="col_titre3"><div class=hd_col>MONTANT<br />TOTAL<br />(7)=(6)*(A)</div></td>
+                </tr>
+                <tr height="5px">
+                        <td />
+                        <td />
+                        <td />
+                        <td />
+                        <td />
+                        <td />
+                        <td />
+                        <td />
+                        <td />
+                        <td />
+                        <td />
+                        <td />
+                        <td />
+                        <td />
+                        <td />
+                        <td />
+                </tr>
+            </thead>
+            <tbody>
+                    {{for items}}
+                        {{if TypeLigne=="LabelOnlyWhite"}}
+                        <!-- Ligne blanche sans icone -->
+                            <tr>
+                                <td colspan="2" style="font-weight: bold;"><div style="position: absolute;z-index:100;font-size:1px;color:white;">¤id={{:IdLigne}}¤</div>{{:Libelle}}</td>
+                                <td>{{:Duree}}</td>
+                                <td>{{:Effectif}}</td>
+                                <td>{{:Unite}}</td>
+                                <td />
+                                <td>{{:SousDetailExpression}}</td>
+                                <td>{{:SousDetailKperte}}</td>
+                                <td>{{:SousDetailQuantite}}</td>
+                                <td>{{:PrixUnitaire}}</td>
+                                <td />
+                                <td>{{:MontantUnitaire}}</td>
+                                <td />
+                                <td>{{:BudgetExpression}}</td>
+                                <td>{{:BudgetQuantite}}</td>
+                                <td />
+                                <td {{if IsFirstRow && IsLastRow}}class=darkblueallborder
+                                    {{else IsFirstRow}}class=darkblueleftborder
+                                    {{else IsLastRow}}class=darkbluerightborder
+                                    {{else}}class=darkbluewithoutborder{{/if}}>
+                                    {{:~formatNumber(MontantTotal)}}</td>
+                            </tr>
+                        {{else TypeLigne=="LabelOnlyBlue"}}
+                        <!-- Ligne bleu clair sans icone -->
+                            <tr>
+                                <td colspan="2" 
+                                    {{if HasSamePreviousTypeRow}}class=lightbluewithoutborder
+                                    {{else}}class=lightblueleftborder{{/if}}>
+                                    <div style="font-weight: bold;"><div style="position: absolute;z-index:100;font-size:1px;color:#A6B1D4;background:#A6B1D4">¤id={{:IdLigne}}¤</div>{{:Libelle}}</div></td>
+                                <td class=lightbluewithoutborder>{{:Duree}}</td>
+                                <td class=lightbluewithoutborder>{{:Effectif}}</td>
+                                <td {{if HasSameNextTypeRow}}class=lightbluewithoutborder
+                                    {{else}}class=lightbluerightborder{{/if}}>
+                                    {{:Unite}}</td>
+                                <td />
+                                <td {{if HasSamePreviousTypeRow}}class=lightbluewithoutborder
+                                    {{else}}class=lightblueleftborder{{/if}}>
+                                    {{:SousDetailExpression}}</td>
+                                <td class=lightbluewithoutborder>{{:SousDetailKperte}}</td>
+                                <td class=lightbluewithoutborder>{{:SousDetailQuantite}}</td>
+                                <td {{if HasSameNextTypeRow}}class=lightbluewithoutborder
+                                    {{else}}class=lightbluerightborder{{/if}}>
+                                    {{:PrixUnitaire}}</td>
+                                <td />
+                                <td {{if HasSamePreviousTypeRow && HasSameNextTypeRow}}class=lightbluewithoutborder
+                                    {{else HasSamePreviousTypeRow}}class=lightbluerightborder
+                                    {{else HasSameNextTypeRow}}class=lightblueleftborder
+                                    {{else}}class=lightblueallborder{{/if}}>
+                                    {{:MontantUnitaire}}</td>
+                                <td />
+                                <td {{if HasSamePreviousTypeRow}}class=lightbluewithoutborder
+                                    {{else}}class=lightblueleftborder{{/if}}>
+                                    {{:BudgetExpression}}</td>
+                                <td {{if HasSameNextTypeRow}}class=lightbluewithoutborder
+                                    {{else}}class=lightbluerightborder{{/if}}>
+                                    {{:BudgetQuantite}}</td>
+                                <td />
+                                <td {{if IsFirstRow && IsLastRow}}class=darkblueallborder
+                                    {{else IsFirstRow}}class=darkblueleftborder
+                                    {{else IsLastRow}}class=darkbluerightborder
+                                    {{else}}class=darkbluewithoutborder{{/if}}>
+                                    <div class"righttext">{{:~formatNumber(MontantTotal)}}</div></td>
+                            </tr>
+                        {{else TypeLigne=="IconAndLabelWhite"}}
+                        <!-- Ligne blanche avec icone et décallage -->
+                            <tr>
+                                <td colspan="2">
+                                    <table style="margin-left:{{:Depth*6+16}}px;font-weight: bold;">
+                                        <tr>
+                                            <td class="iconeborder"><img src="data:image/png;base64,{{if Depth == 0}}{{:~root.grue}}{{else}}{{:~root.fond}}{{/if}}"/></td>
+                                            <td width="5" />
+                                            <td style="margin-left:5px;"><div style="position: absolute;z-index:100;font-size:1px;color:white;">¤id={{:IdLigne}}¤</div>{{:Libelle}}</td>
+                                        </tr>
+                                    </table>
+                                </td>
+                                <td>{{:Duree}}</td>
+                                <td>{{:Effectif}}</td>
+                                <td>{{:Unite}}</td>
+                                <td />
+                                <td>{{:SousDetailExpression}}</td>
+                                <td>{{:SousDetailKperte}}</td>
+                                <td>{{:SousDetailQuantite}}</td>
+                                <td>{{:PrixUnitaire}}</td>
+                                <td />
+                                <td>{{:MontantUnitaire}}</td>
+                                <td />
+                                <td>{{:BudgetExpression}}</td>
+                                <td>{{:BudgetQuantite}}</td>
+                                <td />
+                                <td {{if IsFirstRow && IsLastRow}}class=darkblueallborder
+                                    {{else IsFirstRow}}class=darkblueleftborder
+                                    {{else IsLastRow}}class=darkbluerightborder
+                                    {{else}}class=darkbluewithoutborder{{/if}}>
+                                    <div class"righttext">{{:~formatNumber(MontantTotal)}}</div></td>
+                            </tr>
+                        {{else TypeLigne=="IconAndLabelBlue"}}
+                        <!-- Ligne bleu clair avec icone et décallage -->
+                            <tr>
+                                <td colspan="2">
+                                    <div style="height:100%;width:100%;">
+                                        <table style="margin-left:{{:Depth*6+16}}px;font-weight: bold;height:100%;width:100%;border-collapse: collapse;border-spacing: 0;border: 0;">
+                                            <tr style="height:100%;">
+                                                <td class="iconeborder"><img src="data:image/png;base64,{{if Depth > 0}}{{:~root.bati}}{{/if}}"/></td>
+                                                <td style="width:5px;height:100%;" />
+                                                <td {{if HasSamePreviousTypeRow}}class=lightbluewithoutborder{{else}}class=lightblueleftborder{{/if}}><div style="position: absolute;z-index:100;font-size:1px;color:#A6B1D4">¤id={{:IdLigne}}¤</div>{{:Libelle}}</td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                <td class=lightbluewithoutborder>{{:Effectif}}</td>
+                                <td class=lightbluewithoutborder>{{:Duree}}</td>
+                                <td {{if HasSameNextTypeRow}}class=lightbluewithoutborder
+                                    {{else}}class=lightbluerightborder{{/if}}>
+                                    {{:Unite}}</td>
+                                <td />
+                                <td {{if HasSamePreviousTypeRow}}class=lightbluewithoutborder
+                                    {{else}}class=lightblueleftborder{{/if}}>
+                                    {{:SousDetailExpression}}</td>
+                                <td class=lightbluewithoutborder>{{:SousDetailKperte}}</td>
+                                <td class=lightbluewithoutborder>{{:SousDetailQuantite}}</td>
+                                <td {{if HasSameNextTypeRow}}class=lightbluewithoutborder
+                                    {{else}}class=lightbluerightborder{{/if}}>
+                                    {{:PrixUnitaire}}</td>
+                                <td />
+                                <td {{if HasSamePreviousTypeRow && HasSameNextTypeRow}}class=lightbluewithoutborder
+                                    {{else HasSamePreviousTypeRow}}class=lightbluerightborder
+                                    {{else HasSameNextTypeRow}}class=lightblueleftborder
+                                    {{else}}class=lightblueallborder{{/if}}>
+                                    {{:MontantUnitaire}}</td>
+                                <td />
+                                <td {{if HasSamePreviousTypeRow}}class=lightbluewithoutborder
+                                    {{else}}class=lightblueleftborder{{/if}}>
+                                    {{:BudgetExpression}}</td>
+                                <td {{if HasSameNextTypeRow}}class=lightbluewithoutborder
+                                    {{else}}class=lightbluerightborder{{/if}}>
+                                    {{:BudgetQuantite}}</td>
+                                <td />
+                                <td {{if IsFirstRow && IsLastRow}}class=darkblueallborder
+                                    {{else IsFirstRow}}class=darkblueleftborder
+                                    {{else IsLastRow}}class=darkbluerightborder
+                                    {{else}}class=darkbluewithoutborder{{/if}}>
+                                    <div class"righttext">{{:~formatNumber(MontantTotal)}}</div></td>
+                            </tr>
+                        {{else TypeLigne=="IconAndLabel"}}
+                        <!-- Ligne bleu foncé avec icone et décallage -->
+                            <tr>
+                                <td class="darkblueleftborder2"><div style="margin-left:{{:Depth*6+16}}px;font-weight: bold;font-family: Arial;">{{:Code}}</div></td>
+                                <td class="darkbluewithoutborder2"><div style="position: absolute;z-index:100;font-size:1px;color:#004990;background:#004990">¤id={{:IdLigne}}¤</div>{{:Libelle}}</td>
+                                <td class="darkbluewithoutborder3">{{:Duree}}</td>
+                                <td class="darkbluewithoutborder3">{{:Effectif}}</td>
+                                <td class="darkbluetdunite">
+                                    <div class="darkblueunite">
+                                        <table style="height:100%;width:100%;" >
+                                            <tr>
+                                                <td rowspan="3" style="text-align:center; height:100%;color:#FFF;font-family: Arial;">{{:Unite}}</td>
+                                            </tr>
+                                            <tr style="height:10px;">
+                                            </tr>
+                                            <tr>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </td>
+                                <td />
+                                <td class="darkgreyleftborder">{{:SousDetailExpression}}</td>
+                                <td class="darkgreywithoutborder">{{:~formatNumber(SousDetailKperte)}}</td>
+                                <td class="darkgreywithoutborder">{{:~formatNumber(SousDetailQuantite)}}</td>
+                                <td class="darkgreywithoutborder">{{:~formatNumber(PrixUnitaire)}}</td>
+                                <td />
+                                <td class="darkredleftborder">{{:~formatNumber(MontantUnitaire)}}</td>
+                                <td />
+                                <td class="darkgreyleftborder">{{:BudgetExpression}}</td>
+                                <td class="darkgreywithoutborder">{{:~formatNumber(BudgetQuantite)}}</td>
+                                <td />
+                                <td class="darkredleftborder">{{:~formatNumber(MontantTotal)}}</td>
+                            </tr>
+                        {{else}}
+                        <!-- Ligne grise avec icone et décallage -->
+                            <tr style="border: 1px solid">
+                                <td>
+                                    <div style="margin-left:{{:Depth*6+16}}px;font-weight: bold;height:100%">
+                                        <div class="linediv">
+                                            <table class="linetable" >
+                                                <tr>
+                                                    <td style="border-left:1px solid {{if HasSamePreviousTypeRow}}#004990{{else}}#FFF{{/if}}; width:10px;" />
+                                                    <td rowspan="3" style="text-align:left; height:100%;font-family: Arial;">{{:Code}}</td>
+                                                </tr>
+                                                <tr style="height:10px;">
+                                                    <td style="border-left:1px solid #004990;border-bottom:1px solid #004990;"></td>
+                                                </tr>
+                                                <tr>
+                                                    <td style="border-left:1px solid {{if HasSameNextTypeRow}}#004990{{else}}#FFF{{/if}};"></td>
+                                                </tr>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </td>
+                                <td style="font-family: Arial;"><div style="position: absolute;z-index:100;font-size:1px;color:white;">¤id={{:IdLigne}}¤</div>{{:Libelle}}</td>
+                                <td>{{:Duree}}</td>
+                                <td>{{:Effectif}}</td>
+                                <td style="height:100% !important" class="blackunite">
+                                  <div style="text-align:center; height:100%;font-family: Arial;">M3</td>
+                                </td>
+                                <td />
+                                <td class=greyallborder>{{:SousDetailExpression}}</td>
+                                <td class=greyallborder>{{:~formatNumber(SousDetailKperte)}}</td>
+                                <td class=greyallborder>{{:~formatNumber(SousDetailQuantite)}}</td>
+                                <td {{if HasSameNextTypeRow}} class=greyallborder
+                                    {{else}} class=greyrightborder {{/if}}>
+                                    {{:~formatNumber(PrixUnitaire)}}</td>
+                                <td />
+                                <td {{if HasSameNextTypeRow}} class=redwithoutborder
+                                    {{else}} class=redrightborder {{/if}}>
+                                    <div class="linediv">
+                                        <table class="linetable" >
+                                            <tr>
+                                                <td style="border-left:1px solid {{if HasSamePreviousTypeRow}}#FFF{{else}}#ED1D2E{{/if}}; width:10px;" />
+                                                <td rowspan="3" style="text-align:right; height:100%;color:#FFF">{{:~formatNumber(MontantUnitaire)}}</td>
+                                            </tr>
+                                            <tr style="height:10px;">
+                                                <td style="border-left:1px solid #fff;border-bottom:1px solid #fff"></td>
+                                            </tr>
+                                            <tr>
+                                                <td style="border-left: 1px solid {{if HasSameNextTypeRow}}#FFF{{else}}#ED1D2E{{/if}};"></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </td>
+                                <td />
+                                <td class=greyallborder>{{:BudgetExpression}}</td>
+                                <td {{if HasSameNextTypeRow}} class=greyallborder
+                                    {{else}} class=greyrightborder {{/if}}>
+                                    {{:~formatNumber(BudgetQuantite)}}</td>
+                                <td />
+                                <td {{if HasSameNextTypeRow}} class=redwithoutborder
+                                    {{else}} class=redrightborder {{/if}}>
+                                    <div class="linediv">
+                                        <table class="linetable" >
+                                            <tr>
+                                                <td style="border-left:1px solid {{if HasSamePreviousTypeRow}}#FFF{{else}}#ED1D2E{{/if}}; width:10px;" />
+                                                <td rowspan="3" style="text-align:right; height:100%;color:#FFF">{{:~formatNumber(MontantTotal)}}</td>
+                                            </tr>
+                                            <tr style="height:10px;">
+                                                <td style="border-left:1px solid #fff;border-bottom: 1px solid #FFF;"></td>
+                                            </tr>
+                                            <tr>
+                                                <td style="border-left:1px solid {{if HasSameNextTypeRow}}#FFF{{else}}#ED1D2E{{/if}};"></td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </td>
+                            </tr>
+                        {{/if}}
+                    {{/for}}
+            </tbody>
+        </table>
+    </body>
+</html>
