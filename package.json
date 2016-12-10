@@ -14,11 +14,11 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "electron-prebuilt": "^0.36.8",
+    "electron-prebuilt": "^1.4.12",
     "express": "^4.13.4",
-    "jsreport": "^0.13.0",
-    "jsreport-electron-pdf": "1.2.1",
+    "jsreport": "^1.2.1",
+    "jsreport-electron-pdf": "2.1.1",
     "mime-types": "^2.1.10",
-    "request": "2.69.0"
+    "request": "2.79.0"
   }
 }
